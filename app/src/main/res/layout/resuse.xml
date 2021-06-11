@@ -1,0 +1,117 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:id="@+id/upper"
+        android:layout_marginTop="@dimen/_7sdp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.15"
+
+            android:padding="5dp"
+            android:src="@drawable/home"
+            android:id="@+id/img1"/>
+
+        <TextView
+
+
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.7"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:text="USER1"
+            android:textColor="#101010"
+            android:textStyle="bold" />
+        <ImageView
+
+            android:layout_height="35dp"
+            android:layout_width="0dp"
+            android:layout_weight="0.15"
+            android:src="@drawable/dots"
+            android:scaleType="centerInside"/>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@id/upper"
+        android:src="@drawable/third"
+        android:scaleType="fitXY"
+        android:id="@+id/goku1"/>
+    <ImageView
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="30dp"
+        android:layout_below="@id/goku1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dp"
+        android:id="@+id/h1"
+        android:src="@drawable/hear1"/>
+    <ImageView
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@id/h1"
+        android:layout_below="@id/goku1"
+        android:id="@+id/comment"
+        android:src="@drawable/cnt"/>
+    <ImageView
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="30dp"
+        android:layout_below="@id/goku1"
+        android:layout_toRightOf="@id/comment"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/msg"/>
+    <ImageView
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/_3sdp"
+        android:layout_below="@id/goku1"
+        android:src="@drawable/save"></ImageView>
+    <TextView
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/h1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        android:padding="@dimen/_4sdp"
+        android:text="40 likes"
+        android:id="@+id/likes"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black"/>
+
+    <TextView
+        android:id="@+id/u1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/likes"
+        android:layout_alignParentLeft="true"
+        android:fontFamily="@font/abeezee"
+        android:padding="@dimen/_4sdp"
+        android:text="main_hoon_deb"
+        android:textColor="#121111"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20 minutes"
+        android:textSize="12sp"
+        android:layout_below="@id/u1"
+        android:padding="2sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/likes"
+        android:layout_toRightOf="@id/u1"
+        android:fontFamily="sans-serif-medium"
+        android:padding="@dimen/_4sdp"
+        android:text=":Kamehameha"
+        android:textSize="12sp" />
+
+</RelativeLayout>
